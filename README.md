@@ -1,6 +1,6 @@
 # Yaniss Amazouz
 
-Ingénieur IA · TSP/MAIA — Alternant chez Sopra Steria (IA bancaire) · Fondateur de [GETA Solutions](https://getasolutions.fr)
+Ingénieur IA · Télécom SudParis — Développeur de [GETA Solutions](https://getasolutions.fr)
 
 ---
 
