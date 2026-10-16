@@ -2,12 +2,19 @@
 
 **AI Engineer // LLM Inference & Systems** — Télécom SudParis (IP Paris)
 
-I bring big models to small machines. Upstream `llama.cpp` contributor, GGUF publisher (**64k+** downloads), running 300B+ MoE models 24/7 on a two-node home fleet (Strix Halo 128 GB + RTX 3090).
+I bring big models to small machines: 320B-parameter models on a 128 GB mini PC, where it usually takes a GPU server worth over €100k.
+
+## Kyojin — founder, Yamz Labs
+
+**[Kyojin](https://github.com/Yamz-Labs/kyojin)** is an open-source inference engine (built on ExLlamaV3) that runs GLM-5.3-Flash (320B), Qwen3.8-Flash-Next and MiMo-V2.6-Flash on one AMD Ryzen AI Max+ 395 with 128 GB, up to 500K tokens of context.
+- Faster than competing engines on the same machine, up to 3× llama.cpp ([benchmarks](https://github.com/Yamz-Labs/kyojin/blob/main/doc/benchmarks.md)).
+- Quality measured against the official FP8 weights (KL, top-1); models on [hf.co/yamz-labs](https://huggingface.co/yamz-labs).
+- 170+ stars in two weeks, 5 outside contributors.
 
 ## Upstream work
 
 - **[llama.cpp](https://github.com/ggml-org/llama.cpp)** — brought up **NVIDIA Nemotron-3-Puzzle-75B-A9B** (per-layer MoE): C++ graph builder, per-layer hparams, HF→GGUF converter. **Merged** — [PR #25444](https://github.com/ggml-org/llama.cpp/pull/25444) (56 files, two maintainer reviews). Follow-up robustness fix — [PR #28779](https://github.com/ggml-org/llama.cpp/pull/28779).
-- **[Hugging Face](https://huggingface.co/YanissAmz)** — the reference GGUF builds, **64k+ all-time downloads**: [Hy3-295B-A21B-GGUF](https://huggingface.co/YanissAmz/Hy3-295B-A21B-GGUF) (51k), [Nemotron-3-Puzzle-75B-A9B-GGUF](https://huggingface.co/YanissAmz/Nemotron-3-Puzzle-75B-A9B-GGUF), [DeepSeek-V4-Flash-DSpark-draft-GGUF](https://huggingface.co/YanissAmz/DeepSeek-V4-Flash-DSpark-draft-GGUF). Picked as the reference local setup on [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1usy9ie/tencenthy3_is_the_real_deal_on_128gb/) for publishing perplexity numbers.
+- **[Hugging Face](https://huggingface.co/YanissAmz)** — the reference GGUF builds, **70k+ all-time downloads**: [Hy3-295B-A21B-GGUF](https://huggingface.co/YanissAmz/Hy3-295B-A21B-GGUF) (51k), [Nemotron-3-Puzzle-75B-A9B-GGUF](https://huggingface.co/YanissAmz/Nemotron-3-Puzzle-75B-A9B-GGUF), [DeepSeek-V4-Flash-DSpark-draft-GGUF](https://huggingface.co/YanissAmz/DeepSeek-V4-Flash-DSpark-draft-GGUF). Picked as the reference local setup on [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1usy9ie/tencenthy3_is_the_real_deal_on_128gb/) for publishing perplexity numbers.
 
 ## Home inference lab
 
@@ -30,7 +37,7 @@ I bring big models to small machines. Upstream `llama.cpp` contributor, GGUF pub
 
 ## Stack
 
-**Inference** — C++, llama.cpp, GGUF, quantization, speculative decoding, vLLM, SGLang, CUDA, ROCm, Vulkan · **ML** — Python, PyTorch, RAG, Hugging Face · **Software** — Django, FastAPI, PostgreSQL, Docker, GitHub Actions, Azure
+**Inference** — C++, llama.cpp, GGUF, quantization, speculative decoding, vLLM, SGLang, CUDA, ROCm, Vulkan · **ML** — Python, PyTorch, RAG, Hugging Face · **Software** — Django, FastAPI, PostgreSQL, Docker, GitHub Actions, Azure · **Infra** — Linux, systemd, a four-machine fleet (AMD, NVIDIA, Apple Silicon, cloud) serving models 24/7
 
 ---
 
