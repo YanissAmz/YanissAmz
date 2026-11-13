@@ -4,16 +4,20 @@
 
 I make open AI models run fast on your own hardware, then put them to work.
 
-| ★ 210 | ~1,000 | 85,000+ | ~2× |
-|:---:|:---:|:---:|:---:|
-| GitHub stars for Kyojin in 3 weeks | developers installed Kyojin in 2 weeks | downloads of my models on Hugging Face | faster than llama.cpp |
+[![Kyojin stars](https://img.shields.io/github/stars/Yamz-Labs/kyojin?label=Kyojin%20stars&style=flat-square)](https://github.com/Yamz-Labs/kyojin/stargazers)
+[![Kyojin contributors](https://img.shields.io/github/contributors/Yamz-Labs/kyojin?label=contributors&style=flat-square)](https://github.com/Yamz-Labs/kyojin/graphs/contributors)
+[![Kyojin release](https://img.shields.io/github/v/release/Yamz-Labs/kyojin?label=latest%20release&style=flat-square)](https://github.com/Yamz-Labs/kyojin/releases)
+
+| ~1,000 | 85,000+ | ~2× |
+|:---:|:---:|:---:|
+| developers installed Kyojin in its first 2 weeks | downloads of my models on Hugging Face | faster than llama.cpp on the same machine |
 
 ## Kyojin — founder, Yamz Labs
 
-**[Kyojin](https://github.com/Yamz-Labs/kyojin)** runs the largest open models (DeepSeek, GLM, Qwen) on one mini PC or a single graphics card, **about 2× faster than llama.cpp**, up to 3× on some models ([benchmarks](https://github.com/Yamz-Labs/kyojin/blob/main/doc/benchmarks.md)).
-- 210 stars in 3 weeks, ~1,000 developers installed it in 2 weeks, 8 outside contributors.
-- 20+ releases in the first month, each gated by public benchmarks and a regression check.
-- Custom GPU kernels for AMD (ROCm) and NVIDIA (CUDA), built on ExLlamaV3. Our compressed models are on [hf.co/yamz-labs](https://huggingface.co/yamz-labs), quality measured against the official weights.
+**[Kyojin](https://github.com/Yamz-Labs/kyojin)** runs frontier open models (DeepSeek, GLM, Qwen) on a single desktop PC or Mac, **about 2× faster than llama.cpp on the same machine**, up to 3× on some models ([benchmarks](https://github.com/Yamz-Labs/kyojin/blob/main/doc/benchmarks.md)).
+- ~1,000 developers installed it in its first 2 weeks. Stars, contributors and releases: live counts above.
+- Every release is gated by public benchmarks and a regression check.
+- Custom GPU kernels for AMD (ROCm) and NVIDIA (CUDA), built on ExLlamaV3; Apple Silicon through [kyojin-mac](https://github.com/Yamz-Labs/kyojin-mac) (MLX + Metal). Our compressed models are on [hf.co/yamz-labs](https://huggingface.co/yamz-labs), quality measured against the official weights.
 
 ## In production — GETA Solutions
 
